@@ -12,7 +12,7 @@ const TodoItem = props => {
     }
   }, [])
 
-  const handleEditing = () => {
+  const handleEditing = (e) => {
     setEditing(true)
   }
 
@@ -42,7 +42,7 @@ const TodoItem = props => {
 
   return (
     <li className={styles.item}>
-      <div onClick={handleEditing} style={viewMode}>
+      <div style={viewMode}>
         <input
           type="checkbox"
           className={styles.checkbox}
@@ -54,7 +54,7 @@ const TodoItem = props => {
             style={{ color: "orangered", fontSize: "16px" }}
           />
         </button>
-        <span style={completed ? completedStyle : null}>{title}</span>
+        <span onClick={handleEditing} style={completed ? completedStyle : null}>{title}</span>
       </div>
       <input
         type="text"
