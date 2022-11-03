@@ -20,8 +20,6 @@ if you want this project, follow the next intruccions:
     - `cd React-tutorial`
     - `git checkout feature`
     - `npm i`
-    - `npm run build`
-    - `npx eslint . --fix`
     - `npm start`
 
  - Enjoy :)
