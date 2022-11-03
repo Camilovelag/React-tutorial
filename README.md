@@ -18,7 +18,10 @@ if you want this project, follow the next intruccions:
 
  - Run the next commands:
     - `cd React-tutorial`
+    - `git checkout feature`
     - `npm i`
+    - `npm run build`
+    - `npx eslint . --fix`
     - `npm start`
 
  - Enjoy :)
